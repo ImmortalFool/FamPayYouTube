@@ -12,7 +12,7 @@ def fetch_youtube_data(search_query, next_page=None):
         output = {}
         api_service_name = "youtube"
         api_version = "v3"
-        api_key = "AIzaSyBdktlIXLZMZvASQ_PO8edC5sb4jVV5nwA"
+        api_key = "AIzaSyBYbjxbCbfmt3VWBez_RSXMyXaGggRptxc"
         youtube_data = build(api_service_name, api_version, developerKey=api_key)
         if next_page is None:
             request = youtube_data.search().list(part='snippet', maxResults=50, q=search_query,

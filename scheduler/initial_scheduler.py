@@ -3,9 +3,7 @@ from mongo_db_file.database import write_into_db_from_initial
 
 
 def initial_scheduler(search_query):
-    """
-    Function to push initial bulk data provided by youtube
-    """
+    print("Running in Initial Scheduler")
     data_from_yt = fetch_youtube_data(search_query)
     if data_from_yt['total_results'] == 0:
         print('For the entered search query no results found')
