@@ -1,12 +1,5 @@
-from flask import Flask, request, jsonify
-app = Flask(__name__)
+from fastapi import FastAPI
+from routes.routes import router
+app = FastAPI()
 
-
-@app.route("/get-data/<search_query>")
-def get_data(search_query):
-    return "Return List of data"
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
-
+app.include_router(router)
