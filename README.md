@@ -12,6 +12,7 @@ To achieve this Python, MongoDB, FastAPI web framework. It has 2 API's using whi
 4. Using Docker
    - Pre-requisite: Must have docker installed in the system [Docker Installation](https://docs.docker.com/get-docker/)
    - Once cloned successfully open the terminal in the project directory
+   - Execute the following command "docker compose up --build"
    - Access the api using the postman collection
 6. Without Docker
    - Pre-requisite: Must have python 3.10+ installed in the system
