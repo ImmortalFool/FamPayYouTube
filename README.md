@@ -7,20 +7,18 @@ To achieve this Python, MongoDB, FastAPI web framework. It has 2 API's using whi
 1. Fork this repository
 2. Clone the forked repository
 3. There are 2 ways to setup
-   a. Using Docker
-   b. Without Docker
+   - Using Docker
+   - Without Docker
 4. Using Docker
-   a. Pre-requisite: Must have docker installed in the system [Docker Installation](https://docs.docker.com/get-docker/)
-   b. Once cloned successfully open the terminal in the project directory
-   c. Access the api using the postman collection
-5. Without Docker
-   a. Pre-requisite: Must have python 3.10+ installed in the system
-   b. Activate the virtual environment - [Venv](https://docs.python.org/3/library/venv.html)
-   c. Run the requirements.txt using the following command
-      "pip install -r requirements.txt"
-   d. Once completed run the below command
-      "uvicorn main:app --reload"
-   e. Access rge api using postman collection
+   - Pre-requisite: Must have docker installed in the system [Docker Installation](https://docs.docker.com/get-docker/)
+   - Once cloned successfully open the terminal in the project directory
+   - Access the api using the postman collection
+6. Without Docker
+   - Pre-requisite: Must have python 3.10+ installed in the system
+   - Activate the virtual environment - [Venv](https://docs.python.org/3/library/venv.html)
+   - Run the requirements.txt using the following command "pip install -r requirements.txt"
+   - Once completed run the below command "uvicorn main:app --reload"
+   - Access rge api using postman collection
 
 ## Working
 1. /v1/get-list:
