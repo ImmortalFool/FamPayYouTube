@@ -1,3 +1,6 @@
+"""
+    Connect to mongo db and perform insertion
+"""
 import pymongo.errors
 from pymongo import MongoClient
 
@@ -5,10 +8,14 @@ connection_string = f"mongodb+srv://Admin:q3Dbc0dElSL23RUC@fampay.2fobu28.mongod
 client = MongoClient(connection_string)
 fampay_db = client.FamPay
 youtube_search = fampay_db.youtube_search
+youtube_search.delete_many({})
 youtube_search.create_index("vid", unique=True)
 
 
 def write_into_db_from_initial(items):
+    """
+        Function to insert the data provided from YouTube api into MongoDB
+    """
     success, failure = 0, 0
     for j in items:
         insert_data = {}

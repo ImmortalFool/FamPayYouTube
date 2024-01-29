@@ -5,17 +5,16 @@ from scheduler.frequent_sechduler import frequent_scheduler
 from aiocron import crontab
 import asyncio
 
-search_query = 'mkbhd'
+search_query = 'smartphones'
 app = FastAPI()
 app.include_router(router)
-# initial_scheduler(search_query)
+initial_scheduler(search_query)
 
 
-@crontab('* * * * *')
+@crontab('*/10 * * * * *')  # Runs at every 10 secs
 async def cron_job():
     await frequent_scheduler(search_query)
 
 
 async def execute_cron():
     await asyncio.sleep(1)
-

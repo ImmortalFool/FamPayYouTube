@@ -1,4 +1,7 @@
 def individual_serializer(yt_data) -> dict:
+    """
+        Converts the bson response into dictionary
+    """
     return{
         "_id": str(yt_data["_id"]),
         "vid": yt_data["vid"],

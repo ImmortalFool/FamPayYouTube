@@ -1,3 +1,7 @@
+"""
+    Format the data into mongo db bson format
+"""
+
 from pydantic import BaseModel
 from typing import Dict
 
